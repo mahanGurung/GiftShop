@@ -41,7 +41,8 @@ const Products = () => {
             >
               Load More
             </button>
-          ) : (
+          ) : null}
+          {collection.length > 4 ? (
             <button
               className="shadow-sm shadow-slate-400 text-sm bg-blue-900
          text-white hover:bg-blue-800 rounded-full px-1.5 py-2 pl-3 pr-3 mt-5
@@ -50,7 +51,7 @@ const Products = () => {
             >
               Show less
             </button>
-          )}
+          ) : null}
         </div>
       </div>
     </div>
